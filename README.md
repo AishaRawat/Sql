@@ -28,11 +28,12 @@ Four Types of Sql Statements:<br>
  2.<b>REVOKE</b>:used to withdraw access privileges given with grant command.<br>
  
  
- 4.<b>TCL<b>(Transaction Control Language):It is used for controlling the transactions in a database system.
+ 4.<b>TCL</b>(Transaction Control Language):It is used for controlling the transactions in a database system.<br>
+ 
     1.<b>COMMIT</b>:used to save the work done.<br>
-    2.<b>SAVEPOINT</B>:used to identify a point in a transaction in which you can later rollback <br>
-    3.<b>ROLLBACK</B>:used to restore database to its original since the last commit.<br>
-    4.SET TRANSACTION</B>:establishes properties for the current transactions.<br>
+    2.<b>SAVEPOINT</b>:used to identify a point in a transaction in which you can later rollback <br>
+    3.<b>ROLLBACK</b>:used to restore database to its original since the last commit.<br>
+    4.SET TRANSACTION</b>:establishes properties for the current transactions.<br>
  
  
          
