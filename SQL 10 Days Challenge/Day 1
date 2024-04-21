@@ -38,3 +38,13 @@ Explanation
 
 The results of the first query are formatted to the problem description's specifications.
 The results of the second query are ascendingly ordered first by number of names corresponding to each profession (), and then alphabetically by profession (, and ).
+
+
+Solution : 
+
+Select concat(Name , '(' , SUBSTRING(OCCUPATION , 1 , 1),')') as occupation_name from occupations order by name;
+SELECT 
+CONCAT('There are total of ' , COUNT(OCCUPATION), ' ', LOWER(Occupation) , 's. ') 
+from occupations
+group by occupation
+order by count(occupation)asc, Occupation 
