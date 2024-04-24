@@ -42,5 +42,14 @@ Enter your query here.
 3
 */
 Line: 1 Col: 1
-Run Code Submit CodeUpload Code as File
-BlogScoring
+
+
+Solution : 
+
+
+SELECT c.Company_Code, c.founder, count(Distinct e.Lead_Manager_Code), 
+count(distinct e.Senior_Manager_Code), count(distinct e.Manager_Code), 
+count(distinct e.employee_Code) FROM Company c 
+JOIN Employee e ON c.Company_Code = e.Company_Code GROUP BY c.Company_Code, c.Founder ORDER BY c.COMpany_Code;
+
+Note : We didn't require multiple joins here . Just Employee & Company table was enough for retreiving the data!
