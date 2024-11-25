@@ -1,0 +1,78 @@
+Ecommerce – Case Study Questions
+
+
+Case Study Scenario:
+You are an analytics manager at Amazon, and your task is to analyze the sales data to gain insights into customer behavior, product performance, and overall business health. You have access to the following tables:
+1.	Customers:
+•	CustomerID (Primary Key)
+•	CustomerName
+•	Email
+•	JoinDate
+2.	Products:
+•	ProductID (Primary Key)
+•	ProductName
+•	Category
+•	Price
+3.	Orders:
+•	OrderID (Primary Key)
+•	CustomerID (Foreign Key)
+•	OrderDate
+•	TotalAmount
+4.	OrderDetails:
+•	OrderDetailID (Primary Key)
+•	OrderID (Foreign Key)
+•	ProductID (Foreign Key)
+•	Quantity
+•	Price
+<B>Easy Questions:</B>
+1.	List all customers who joined in the year 2023.
+Select CustomerName from Customers WHERE YEAR(JoinDate) = ‘2023’;
+2.	Find the total number of orders placed.
+Select COUNT(ORDERID) from Orders;
+3.	Retrieve the names and prices of all products in the 'Electronics' category.
+Select ProductName , Price from Product where  Category = ‘Electronics’
+4.	Get the total sales amount for each product.
+Select Product Name , SUM(Quantity * Price) As TotalSales
+From TotalSales Group By Product Name ;
+5.	Find the total number of customers.
+Select COUNT(DISTINCT(CustomerName) from Customers;
+Medium Questions:
+6.	List the top 5 products by total sales amount.
+Select 
+7.	Find the average order value (total amount) for each customer.
+Select CustomerName , AVG(Total Amount) from Customers
+INNER JOIN ORDERS 
+ON 
+Customers.CustomerID=Orders. CustomerID
+GROUP BY CustomerName
+8.	Retrieve the details of orders placed in the last 30 days.
+Select * from orders where orderdate>= CURRENT_DATE() – INTERVAL 30 DAY;
+
+9.	Get the total quantity of products sold for each category.
+To solve this query , we need to group data by category and sum up the quantities sold for each category.
+Select Products.Category , SUM(OrderDetails.Quantity) as totalquantity 
+From Products inner join 
+Orderdetails on
+Products.ProductID=Orderdetails.ProductID
+Group by Category;
+
+
+
+10.	Find the customers who have placed more than 5 orders.
+SELECT customerid,count(orderid) FROM Orders
+ as 
+totalorders group by customerid
+having count(orderid)>5
+;
+ 
+Hard Questions:
+11.	Identify the month with the highest total sales in the current year.
+Select MONTH(Order_Date) ,SUM(Quantity*Price) as total sales from orders 
+INNER JOIN 
+OrderDetails on Orders.OrderID=Orderdetails.OrderID
+Where Orders.orderdate=CURRENTDATE()
+12.	Find the top 3 customers by total spending.
+13.	Calculate the retention rate of customers who made their first purchase in the last year.
+14.	Determine the product with the highest average order quantity.
+15.	Find the percentage of orders that include more than 3 different products.
+
