@@ -24,7 +24,7 @@ You are an analytics manager at Amazon, and your task is to analyze the sales da
 •	ProductID (Foreign Key)
 •	Quantity
 •	Price
-<B>Easy Questions:</B>
+**Easy Questions:**
 1.	List all customers who joined in the year 2023.
 Select CustomerName from Customers WHERE YEAR(JoinDate) = ‘2023’;
 2.	Find the total number of orders placed.
