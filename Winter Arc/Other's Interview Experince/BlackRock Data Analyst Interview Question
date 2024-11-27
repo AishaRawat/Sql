@@ -1,0 +1,25 @@
+**BlackRock Data Analyst Interview Experience:**
+CTC: 25 LPA
+
+
+SQL Questions
+
+ 1. Identify customers who have invested in at least two funds with opposite performance trends (one increasing and the other decreasing) over the last 6 months.
+ 2. Write a query to calculate the year-to-date portfolio returns for each client, ensuring that the query can handle daily transactions across multiple funds.
+ 3. Find the top 5 performing funds within each region based on their weighted average returns, accounting for the size of investments in each fund.
+ 4. Write a query to detect and list transactions that may indicate potential duplication (e.g., same client, fund, amount, and timestamp within 5 minutes).
+ 5. Discuss the implementation and use of materialized views for financial dashboards. How would you ensure they are updated efficiently in near real-time?
+ 6. Explain the ACID properties of SQL transactions and their importance in a financial database handling millions of trades daily.
+ 7. Describe how you would design a sharding strategy for a massive transactional database storing global trading data.
+ 8. Explain the role of indexing in optimizing complex joins and aggregations for a dataset with billions of financial records. Provide examples of when over-indexing might degrade performance.
+
+Python Questions
+
+ 1. Write a Python function to find the second largest element in a list without using built-in sorting functions.
+ 2. Implement a program that takes a dictionary of funds (keys: fund names, values: returns) and returns the name of the fund with the highest return.
+ 3. Write a Python script to remove duplicates from a list of client IDs while maintaining the original order.
+ 4. Develop a function to merge two dictionaries containing client portfolios, summing the values of common keys (assets).
+ 5. Explain the differences between Python’s collections.defaultdict and a standard dictionary. When would you use defaultdict in financial data processing?
+ 6. Discuss how Python’s multiprocessing module can be used to improve the performance of a script analyzing high-frequency trading data.
+ 7. How would you use Python’s itertools module to generate all possible portfolio combinations from a list of 10 assets? Discuss the computational challenges of such tasks.
+ 8. Explain the use of Python’s decorators to log execution time and memory usage for functions processing large-scale financial data.
