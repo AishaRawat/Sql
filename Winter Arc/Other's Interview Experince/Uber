@@ -1,0 +1,16 @@
+1. Write a Python program to identify the top 3 drivers with the highest number of trips completed in a day.
+ • Input: A list of dictionaries, where each dictionary contains driver_id and trips_completed.
+ • Output: A list of driver_ids with the highest trips.
+
+2. Write a Python function to detect surge pricing zones.
+ • Input: A dataset with columns: zone_id, total_rides, and available_drivers.
+ • Output: Zones where the ratio of total rides to available drivers exceeds a threshold.
+
+3. Write an SQL query to calculate the percentage of canceled rides for each city. Use a rides table with columns: city, ride_status (completed or canceled), and ride_id.
+
+4. Write an SQL query to identify the drivers who have completed more than 500 rides in the last month. Use a trips table with columns: driver_id, trip_date, and trip_id.
+
+4. Write an SQL query to calculate the average earnings of drivers in each city during peak hours (7 AM - 10 AM, 5 PM - 9 PM). Use a trips table with columns: driver_id, city, earnings, and trip_time.
+
+5. Puzzle:
+You have a set of 100 drivers, and each driver’s GPS location is tracked once per second. How can you efficiently determine which driver traveled the longest distance in a given 24-hour period using their location data?
