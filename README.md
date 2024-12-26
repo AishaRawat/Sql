@@ -32,7 +32,19 @@ Four Types of Sql Statements:<br>
     1.<b>COMMIT</b>:used to save the work done.<br>
     2.<b>SAVEPOINT</b>:used to identify a point in a transaction in which you can later rollback <br>
     3.<b>ROLLBACK</b>:used to restore database to its original since the last commit.<br>
+
+    
     4.<b>SET TRANSACTION</b>:establishes properties for the current transactions.<br>
+
+ <b> Order of Execution in SQL</b><br>
+ FROM<BR>
+ WHERE<BR>
+ GROUP BY<BR>
+ HAVING<BR>
+ SELECT<BR>
+ DISTINCT<BR>
+ ORDER BY<BR>
+ LIMIT<BR>
  
  
          
