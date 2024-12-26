@@ -8,7 +8,7 @@ Select e* , max(salary) over() as max_salary from employee e;<br>
     <th>Emp_name</th>
      <th>dept_name</th>
     <th>salary</th>
-     <th>salary</th>
+     <th>max_salary</th>
   </tr>
 </table><br>
 
