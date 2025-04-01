@@ -5,4 +5,4 @@ Example: <br>
 <body text="blue" > <p> SELECT column_name,
        RANK() OVER (ORDER BY column_name) AS rank
 FROM table_name;
-</p></body>
+</p> </body>
