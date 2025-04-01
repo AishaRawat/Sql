@@ -27,4 +27,10 @@ Select dept_name , max(salary) as max_salary from employee group by dept_name;<b
 But What if our requirement changes and we want to display dept_name with salary and with other employee details also .<br>
 It is not possible with the aggregate function. Though we can use CTEs or <B>WITH</B> Clause but window function would be the most optimistic approach in this.
 
+Note : Below are given reasons of using window functions:  
+1. Unlike aggregate functions, window functions don't collapse rows into a single result. This means you can retain the original data structure while adding new calculated columns.
+2.hey can be more efficient than subqueries or joins for certain types of calculations, as they are optimized for performance in many SQL databases.
+3.They enable more sophisticated data analysis, such as calculating cumulative sums, finding the nth value in a partition, or identifying trends over time.
+4.They allow you to perform complex calculations across rows related to the current row without needing to group data. This is useful for tasks like running totals, moving averages, and ranking.
+
 
