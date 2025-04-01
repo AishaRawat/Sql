@@ -3,10 +3,10 @@
 <B>Behavior</B>: If there are ties (rows with the same values), RANK assigns the same rank to those rows, but skips the subsequent ranks.<br>
 Example: <br>
 <body>
-  <p style="color: blue;">
+  <p style="color: blue;">$${\color{blue}Blue}$$
     SELECT column_name,
     RANK() OVER (ORDER BY column_name) AS rank
-    FROM table_name;
+    FROM table_name;$${\color{blue}Blue}$$
   </p>
 </body>
 
