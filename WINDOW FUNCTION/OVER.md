@@ -24,7 +24,7 @@ Select dept_name , max(salary) as max_salary from employee group by dept_name;<b
   </tr>
 </table><BR>
 
-But What if our requirement changes and we want to display dept_name with salary and with other employee details also .<br>
+But What if our requirement changes and we want to display dept_name with <h4>salary<h4> and with <h4>other employee<h4> details also .<br>
 It is not possible with the aggregate function. Though we can use CTEs or <B>WITH</B> Clause but window function would be the most optimistic approach in this.
 
 Note : Below are given reasons of using window functions:  
