@@ -9,6 +9,15 @@ Example: <br>
     FROM table_name;
   </p>
 </code>
+<H1> DENSE_RANK </H1>
+Purpose: Similar to RANK, but does not skip ranks when there are ties.<BR>
+Behavior: Rows with the same values receive the same rank, and the next rank is consecutive.<BR>
+Example:<BR>
+<CODE>
+SELECT column_name,
+       DENSE_RANK() OVER (ORDER BY column_name) AS dense_rank
+FROM table_name;
+</CODE>
 
 
 
