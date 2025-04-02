@@ -8,7 +8,56 @@ Example: <br>
     RANK() OVER (ORDER BY column_name) AS rank
     FROM table_name;
   </p>
-</code>
+</code><BR>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>column_name</th>
+      <th>rank</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>4</td>
+    </tr>
+  </table>
+</body>
+</html>
+<BR>
 <H1> DENSE_RANK </H1>
 Purpose: Similar to RANK, but does not skip ranks when there are ties.<BR>
 Behavior: Rows with the same values receive the same rank, and the next rank is consecutive.<BR>
