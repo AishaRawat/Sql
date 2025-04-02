@@ -46,7 +46,35 @@ Example:<BR>
 SELECT column_name,
        DENSE_RANK() OVER (ORDER BY column_name) AS dense_rank
 FROM table_name;
-</P></CODE>
+</P></CODE><BR>
+<!DOCTYPE html>
+<html>
+<body>
+  <table>
+    <tr>
+      <th>column_name</th>
+      <th>dense_rank</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>3</td>
+    </tr>
+  </table>
+</body>
+</html>
+
 
 
 
