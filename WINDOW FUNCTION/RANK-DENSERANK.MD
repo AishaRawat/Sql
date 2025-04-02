@@ -11,27 +11,7 @@ Example: <br>
 </code><BR>
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    table {
-      width: 50%;
-      border-collapse: collapse;
-    }
-    table, th, td {
-      border: 1px solid black;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    td {
-      color: blue;
-    }
-  </style>
-</head>
+
 <body>
   <table>
     <tr>
